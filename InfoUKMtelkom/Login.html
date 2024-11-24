@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="doodle.jpg" alt="Doodle" class="doodle-image">
+        </div>
+        <div class="right-section">
+            <!-- Form hanya meminta username dan password -->
+            <form class="login-form" method="POST" action="Login.php">
+                <h2>Log in</h2>
+                <label for="username">Nama Lengkap</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <a href="#" class="forgot-password">Forgot Password?</a>
+
+                <!-- Menampilkan pesan error jika ada -->
+                <?php if (isset($_GET['error'])): ?>
+                    <p style="color: red;">
+                        <?php
+                            if ($_GET['error'] == 'wrong_password') {
+                                echo "Password salah!";
+                            } elseif ($_GET['error'] == 'user_not_found') {
+                                echo "Username tidak ditemukan!";
+                            }
+                        ?>
+                    </p>
+                <?php endif; ?>
+
+                <button type="submit" class="login-button">Login</button>
+                
+                <a href="BuatAkun.html" class="create-account">Buat akun</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

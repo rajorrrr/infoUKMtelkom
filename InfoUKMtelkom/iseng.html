@@ -1,0 +1,458 @@
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#"><i class="icon fas fa-home"></i></a>
+        <a href="#"><i class="icon fas fa-bell"></i></a>
+        <a href="Pencarian.html"><i class="icon fas fa-search"></i></a>
+        <a href="profil.html"><i class="icon fas fa-user"></i></a>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper container-fluid">
+        <!-- New Post Section -->
+        <div class="new-post mt-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <h2 class="text-xl font-bold">New Post</h2>
+                        <a href="berita.html" class="text-sm text-muted">See more</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Post Cards -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <!-- Bagian Atas: Posted By -->
+                            <div class="card-header d-flex align-items-center bg-light">
+                                <img src="97242732_237533537524197_4474686594728591360_n (1).jpg" alt="User Profile" class="rounded-circle me-3" style="width: 40px; height: 40px;">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">ukmbolatelu</h6>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <img src="462500569_1526509842076945_1597993543926090876_n.jpg" class="card-img-top img-fluid rounded-top" alt="Post Image">
+                                <div class="mt-2">
+                                    <h5 class="card-title mb-3 fw-bold">1 - 0 FULL TIME LIFMAJAB 2024</h5>
+                                    <p class="card-text text-muted">Futsal Telkom berhasil mengalahkan futsal widyatama dengan skor tipis 1-0.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <div class="text-muted small">736 People Saw</div>
+                                    <div>
+                                        <i class="bi bi-save2 me-3" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                        <i class="bi bi-share" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ulangi div.card untuk setiap post -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Planner, Events, and UKM Wrapper -->
+        <div class="planner-ukm-wrapper container mt-5">
+            <div class="planner">
+                <h3>Planner</h3>
+                <div id="novemberCalendar"></div>
+                <div id="eventListPanel">
+                    <h2>Activities</h2>
+                    <ul id="eventList"></ul>
+                </div>
+            </div>
+
+            <div class="events-section-container mt-4">
+                <div class="header d-flex justify-content-between">
+                    <h2 class="text-xl font-bold">Live Events</h2>
+                    <a class="text-sm text-gray-500" href="#">See more</a>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="events live-events">
+                            <img src="doodle.jpg" alt="Event Image" class="img-fluid">
+                            <p><strong>Title:</strong> Event Title 1</p>
+                            <p><strong>Date:</strong> 15 November, 2024</p>
+                            <p><strong>Location:</strong> Event Location</p>
+                            <p><strong>Description:</strong> This is a description of the live event.</p>
+                        </div>
+                    </div>
+                    <!-- Ulangi div.events untuk setiap event -->
+                </div>
+            </div>
+
+            <div class="events-section-container mt-4">
+                <div class="header d-flex justify-content-between">
+                    <h2 class="text-xl font-bold">New Events</h2>
+                    <a class="text-sm text-gray-500" href="#">See more</a>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="events live-events">
+                            <img src="doodle.jpg" alt="Event Image" class="img-fluid">
+                            <p><strong>Title:</strong> Event Title 1</p>
+                            <p><strong>Date:</strong> 15 November, 2024</p>
+                            <p><strong>Location:</strong> Event Location</p>
+                            <p><strong>Description:</strong> This is a description of the live event.</p>
+                        </div>
+                    </div>
+                    <!-- Ulangi div.events untuk setiap event -->
+                </div>
+            </div>
+
+            <!-- Modal Popup Kalender Tahun -->
+            <div id="fullCalendarModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Kalender 2024</h2>
+                    <div id="fullCalendar"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="Beranda.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</body><body>
+
+
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#"><i class="icon fas fa-home"></i></a>
+        <a href="#"><i class="icon fas fa-bell"></i></a>
+        <a href="Pencarian.html"><i class="icon fas fa-search"></i></a>
+        <a href="profil.html"><i class="icon fas fa-user"></i></a>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+        <!-- New Post Section -->
+        <div class="new-post">
+            <h4><a href="DaftarUkm.html" class="daftar-ukm">Register for student activity clubs ?</a></h4>
+            <div class="container my-4">
+                <div class="row">
+                    <!-- Bagian New Post -->
+                    <div class="col-12 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="text-xl font-bold">New Post</h2>
+                            <a href="berita.html" class="text-sm text-muted see-more" >See more</a>
+                        </div>
+                    </div>
+                    <!-- Post Cards -->
+                    <div class="row">
+                        <!-- Post 1 -->
+                        <div class="col-12 mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card shadow-sm">
+                                    <!-- Bagian Atas: Posted By -->
+                                    <div class="card-header d-flex align-items-center" style="background-color: #f8f9fa; border-bottom: none;">
+                                        <img src="97242732_237533537524197_4474686594728591360_n (1).jpg" alt="User Profile" class="rounded-circle me-3" style="width: 40px; height: 40px;">
+                                        <div>
+                                            <h6 class="mb-0 fw-bold">ukmbolatelu</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-img-top-container">
+                                        <img src="462500569_1526509842076945_1597993543926090876_n.jpg" class="card-img-top img-fluid rounded-top" alt="Post Image">
+                                    </div>
+                                    <!-- Tambahkan container untuk tanggal dan jam -->
+                                    <div class="card-meta d-flex justify-content-between px-3 py-2">
+                                        <!-- Tanggal -->
+                                        <small class="text-muted date">5 March 2024</small>
+                                        <!-- Jam -->
+                                        <small class="text-muted time">17:34 PM</small>
+                                    </div>
+                                    <!-- Bagian Tengah: Konten -->
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3 fw-bold">1 - 0 FULL TIME LIFMAJAB 2024</h5>
+                                        <p class="card-text text-muted">
+                                            Futsal Telkom berhasil mengalahkan futsal widyatama dengan skor tipis 1-0
+                                        </p>
+                                    </div>
+                                    <!-- Bagian Bawah: Footer -->
+                                    <div class="card-footer d-flex justify-content-between align-items-center">
+                                        <div class="text-muted small">736 People Saw</div>
+                                        <div class="d-flex align-items-center">
+                                            <!-- Save Icon -->
+                                            <i class="bi bi-save2 me-3" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                            <!-- Share Icon -->
+                                            <i class="bi bi-share" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>                           
+                        <div class="col-12 mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card shadow-sm">
+                                    <!-- Bagian Atas: Posted By -->
+                                    <div class="card-header d-flex align-items-center" style="background-color: #f8f9fa; border-bottom: none;">
+                                        <img src="https://via.placeholder.com/40" alt="User Profile" class="rounded-circle me-3" style="width: 40px; height: 40px;">
+                                        <div>
+                                            <h6 class="mb-0 fw-bold">ukmbolatelu</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-img-top-container">
+                                        <img src="462319702_3807790802818596_7402220557763505909_n.jpg" class="card-img-top img-fluid rounded-top" alt="Post Image">
+                                    </div>
+                                    <!-- Tambahkan container untuk tanggal dan jam -->
+                                    <div class="card-meta d-flex justify-content-between px-3 py-2">
+                                        <!-- Tanggal -->
+                                        <small class="text-muted date">5 March 2024</small>
+                                        <!-- Jam -->
+                                        <small class="text-muted time">17:34 PM</small>
+                                    </div>
+                                    <!-- Bagian Tengah: Konten -->
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3 fw-bold">2 - 2 FULL TIME LIFMAJAB 2024</h5>
+                                        <p class="card-text text-muted">
+                                            Tim futsal Telkom ditahan imbang oleh tim futsal UNIGA
+                                        </p>
+                                    </div>
+                                    <!-- Bagian Bawah: Footer -->
+                                    <div class="card-footer d-flex justify-content-between align-items-center">
+                                        <div class="text-muted small">736 People Saw</div>
+                                        <div class="d-flex align-items-center">
+                                            <!-- Save Icon -->
+                                            <i class="bi bi-save2 me-3" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                            <!-- Share Icon -->
+                                            <i class="bi bi-share" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>    
+                        <div class="col-12 mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card shadow-sm">
+                                    <!-- Bagian Atas: Posted By -->
+                                    <div class="card-header d-flex align-items-center" style="background-color: #f8f9fa; border-bottom: none;">
+                                        <img src="https://via.placeholder.com/40" alt="User Profile" class="rounded-circle me-3" style="width: 40px; height: 40px;">
+                                        <div>
+                                            <h6 class="mb-0 fw-bold">ukmbolatelu</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-img-top-container">
+                                        <img src="https://via.placeholder.com/600x300" class="card-img-top img-fluid rounded-top" alt="Post Image">
+                                    </div>
+                                    <!-- Tambahkan container untuk tanggal dan jam -->
+                                    <div class="card-meta d-flex justify-content-between px-3 py-2">
+                                        <!-- Tanggal -->
+                                        <small class="text-muted date">5 March 2024</small>
+                                        <!-- Jam -->
+                                        <small class="text-muted time">17:34 PM</small>
+                                    </div>
+                                    <!-- Bagian Tengah: Konten -->
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3 fw-bold">0 - 5 FULL TIME TUNFC 2024</h5>
+                                        <p class="card-text text-muted">
+                                            Langkah Tim Telkom A harus terhenti di babak penyisihan 8 Besar. Tetap mari kita dukung dan doakan semua pemain yang sudah berusaha secara maksimal.
+                                        </p>
+                                    </div>
+                                    <!-- Bagian Bawah: Footer -->
+                                    <div class="card-footer d-flex justify-content-between align-items-center">
+                                        <div class="text-muted small">736 People Saw</div>
+                                        <div class="d-flex align-items-center">
+                                            <!-- Save Icon -->
+                                            <i class="bi bi-save2 me-3" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                            <!-- Share Icon -->
+                                            <i class="bi bi-share" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>    
+                        <div class="col-12 mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card shadow-sm">
+                                    <!-- Bagian Atas: Posted By -->
+                                    <div class="card-header d-flex align-items-center" style="background-color: #f8f9fa; border-bottom: none;">
+                                        <img src="https://via.placeholder.com/40" alt="User Profile" class="rounded-circle me-3" style="width: 40px; height: 40px;">
+                                        <div>
+                                            <h6 class="mb-0 fw-bold">ukmbolatelu</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-img-top-container">
+                                        <img src="https://via.placeholder.com/600x300" class="card-img-top img-fluid rounded-top" alt="Post Image">
+                                    </div>
+                                    <!-- Tambahkan container untuk tanggal dan jam -->
+                                    <div class="card-meta d-flex justify-content-between px-3 py-2">
+                                        <!-- Tanggal -->
+                                        <small class="text-muted date">5 March 2024</small>
+                                        <!-- Jam -->
+                                        <small class="text-muted time">17:34 PM</small>
+                                    </div>
+                                    <!-- Bagian Tengah: Konten -->
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3 fw-bold">0 - 5 FULL TIME TUNFC 2024</h5>
+                                        <p class="card-text text-muted">
+                                            Langkah Tim Telkom A harus terhenti di babak penyisihan 8 Besar. Tetap mari kita dukung dan doakan semua pemain yang sudah berusaha secara maksimal.
+                                        </p>
+                                    </div>
+                                    <!-- Bagian Bawah: Footer -->
+                                    <div class="card-footer d-flex justify-content-between align-items-center">
+                                        <div class="text-muted small">736 People Saw</div>
+                                        <div class="d-flex align-items-center">
+                                            <!-- Save Icon -->
+                                            <i class="bi bi-save2 me-3" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                            <!-- Share Icon -->
+                                            <i class="bi bi-share" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>    
+                        <div class="col-12 mb-4">
+                            <div class="col-12 mb-4">
+                                <div class="card shadow-sm">
+                                    <!-- Bagian Atas: Posted By -->
+                                    <div class="card-header d-flex align-items-center" style="background-color: #f8f9fa; border-bottom: none;">
+                                        <img src="https://via.placeholder.com/40" alt="User Profile" class="rounded-circle me-3" style="width: 40px; height: 40px;">
+                                        <div>
+                                            <h6 class="mb-0 fw-bold">ukmbolatelu</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-img-top-container">
+                                        <img src="https://via.placeholder.com/600x300" class="card-img-top img-fluid rounded-top" alt="Post Image">
+                                    </div>
+                                    <!-- Tambahkan container untuk tanggal dan jam -->
+                                    <div class="card-meta d-flex justify-content-between px-3 py-2">
+                                        <!-- Tanggal -->
+                                        <small class="text-muted date">5 March 2024</small>
+                                        <!-- Jam -->
+                                        <small class="text-muted time">17:34 PM</small>
+                                    </div>
+                                    <!-- Bagian Tengah: Konten -->
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3 fw-bold">0 - 5 FULL TIME TUNFC 2024</h5>
+                                        <p class="card-text text-muted">
+                                            Langkah Tim Telkom A harus terhenti di babak penyisihan 8 Besar. Tetap mari kita dukung dan doakan semua pemain yang sudah berusaha secara maksimal.
+                                        </p>
+                                    </div>
+                                    <!-- Bagian Bawah: Footer -->
+                                    <div class="card-footer d-flex justify-content-between align-items-center">
+                                        <div class="text-muted small">736 People Saw</div>
+                                        <div class="d-flex align-items-center">
+                                            <!-- Save Icon -->
+                                            <i class="bi bi-save2 me-3" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                            <!-- Share Icon -->
+                                            <i class="bi bi-share" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Planner, Events, and UKM Wrapper -->
+        <div class="planner-ukm-wrapper">
+            <!-- Planner Section -->
+            <div class="planner">
+                <h3>Planner</h3>
+                <div id="novemberCalendar"></div>
+                <div id="eventListPanel">
+                    <h2>Activities </h2>
+                    <ul id="eventList"></ul>
+                </div>
+            </div>
+
+            <!-- Live Events Section -->
+            <div class="events-section-container mt-4">
+                <div class="header">
+                    <h2 class="text-xl font-bold">Live Events</h2>
+                    <a class="text-sm text-gray-500" href="#">See more</a>
+                </div>
+
+                <!-- Events Container -->
+                <div class="events-container">
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 1</p>
+                        <p><strong>Date:</strong> 15 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 2</p>
+                        <p><strong>Date:</strong> 15 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 3</p>
+                        <p><strong>Date:</strong> 16 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 4</p>
+                        <p><strong>Date:</strong> 16 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <!-- Additional events can be added as needed -->
+                </div>
+            </div>
+
+            <!-- New Events Section -->
+            <div class="events-section-container mt-4">
+                <div class="header">
+                    <h2 class="text-xl font-bold">New Events</h2>
+                    <a class="text-sm text-gray-500" href="#">See more</a>
+                </div>
+
+                <!-- Events Container -->
+                <div class="events-container">
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 1</p>
+                        <p><strong>Date:</strong> 15 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 2</p>
+                        <p><strong>Date:</strong> 15 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 3</p>
+                        <p><strong>Date:</strong> 16 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 4</p>
+                        <p><strong>Date:</strong> 16 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <!-- Additional events can be added as needed -->
+                </div>
+            </div>
+
+            <!-- Modal Popup Kalender Tahun -->
+            <div id="fullCalendarModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Kalender 2024</h2>
+                    <div id="fullCalendar"></div>
+                </div>
+            </div>
+
+            <script src="Beranda.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
